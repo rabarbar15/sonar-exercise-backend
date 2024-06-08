@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*
 class BookController(private val bookService: BookService, private val orderService: OrderService) {
 
     @GetMapping("/books")
-    fun getAllBooks(): List<Book> {
+        fun getAllBooks(): List<Book> {
         return bookService.getAllBooks()
     }
 
@@ -24,9 +24,11 @@ class BookController(private val bookService: BookService, private val orderServ
     }
 
     @GetMapping("/orders")
-    fun getOrders(): List<Order> {
+        fun getOrders(): List<Order> {
         return orderService.getOrders()
     }
+
+
 
     @PostMapping("/order")
     fun createOrder(@RequestBody order: Order): ResponseEntity<Order> {

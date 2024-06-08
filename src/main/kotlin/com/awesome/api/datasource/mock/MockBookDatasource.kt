@@ -11,15 +11,18 @@ class MockBookDatasource : BookDatasource {
         Book(0,"Drakula", "Bram Stoker", 10.99),
         Book(1,"Behawiorysta", "Remigiusz Mróz", 8.99),
         Book(2,"Dwie wieże", "J.R.R. Tolkien", 11.99),
+
         Book(3,"Jobs", "Walter Isaacson", 11.99),
         Book(4,"Out", "Natsu Kirimo", 11.99),
         Book(5,"Solaris", "Stanisław Lem", 11.99),
+        
         Book(6,"Szklany Klosz", "Sylvia Plath", 11.99),
         Book(7,"Ziemiomorze", "Ursula K. Le Guin", 11.99),
         Book(8,"Miasteczko Salem", "Stephen King", 11.99),
     )
 
     override fun retrieveAll(): List<Book> = books
+
 
     override fun retrieveById(id: Int): Book = books[id]
 

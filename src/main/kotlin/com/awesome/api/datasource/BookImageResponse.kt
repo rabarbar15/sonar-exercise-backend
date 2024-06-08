@@ -4,5 +4,6 @@ import com.awesome.api.model.Book
 
 data class BookImageResponse(
     val book: Book,
+    
     val image: ByteArray
 )
